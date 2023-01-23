@@ -35,6 +35,7 @@ export function Calculator(){
     }
 
     return(
+
         <div className='container'>
 
             <h1>Calculator</h1>
@@ -60,7 +61,9 @@ export function Calculator(){
                 <button onClick={back} className='btn' id="btn16">Back</button>
                 <button onClick={calculate} className='btn' id="btn17">=</button>
                 <button onClick={()=> insert('/')} className='btn' id="btn18">/</button>
+
             </div>
+            
         </div>
     );
 }

@@ -62,6 +62,11 @@ h1 {
     color: #ddd;
     font-size: 30px;
     margin: auto;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: #373737;    
 }
 
 #btn1 {
@@ -136,4 +141,59 @@ h1 {
 
 #btn18 {
     grid-area: a15;
+}
+
+
+@media screen and (max-width: 390px) {
+    .calculator-container {
+      height: 65%;
+      width: 90%;
+      background-color: #ddd;
+      border-radius: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      'input input input a1 ' 
+      'a2  a3  a4  a5 ' 
+      'a6  a7  a8  a9 ' 
+      'a10   a11   a12   a13' 
+      'a14   a14   a14   a15' 
+      'a16   a17   a17   a18';
+      padding: 1vw;
+    }
+
+    #result {
+      outline: none;
+      height: 70px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      grid-area: input;
+      margin: auto;
+      width: 94%;
+      font-size: 5vw;
+      text-align: end;
+      padding-right: 4px;
+    }
+
+    .btn {
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      width: 19vw;
+      height: 19vw;
+      background-color: #171717;
+      color: #ddd;
+      font-size: 30px;
+      margin: auto;
+    }
+
+    #btn14 {
+        width: 63vw;
+        grid-area: a14;
+    }
+
+    #btn16 {
+        width: 40vw;
+        grid-area: a17;
+    }
 }
