@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    color: #ddd
+}
+
+.calculator-container {
+    height: 540px;
+    width: 370px;
+    background-color: #ddd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'input input input a1'
+    'a2 a3 a4 a5'
+    'a6 a7 a8 a9'
+    'a10 a11 a12 a13'
+    'a14 a14 a14 a15'
+    'a16 a17 a17 a18';
+    padding: 10px;
+}
+
+#result {
+    outline: none;
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    grid-area: input;
+    margin: auto;
+    width: 94%;
+    font-size: 26px;
+    text-align: end;
+    padding-right: 4px;
+}
+
+.btn {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-color: #171717;
+    color: #ddd;
+    font-size: 30px;
+    margin: auto;
+}
+
+#btn1 {
+    grid-area: a1;
+}
+
+#btn2 {
+    grid-area: a2;
+}
+
+#btn3 {
+    grid-area: a3;
+}
+
+#btn4 {
+    grid-area: a4;
+}
+
+#btn5 {
+    grid-area: a5;
+}
+
+#btn6 {
+    grid-area: a6;
+}
+
+#btn7 {
+    grid-area: a7;
+}
+
+#btn8 {
+    grid-area: a8;
+}
+
+#btn9 {
+    grid-area: a9;
+}
+
+#btn10 {
+    grid-area: a10;
+}
+
+#btn11 {
+    grid-area: a11;
+}
+
+#btn12 {
+    grid-area: a12;
+}
+
+#btn13 {
+    grid-area: a13;
+}
+
+#btn14 {
+    grid-area: a14;
+    width: 250px;
+}
+
+#btn15 {
+    grid-area: a16;
+}
+
+#btn16 {
+    grid-area: a17;
+    width: 170px;
+}
+
+#btn17 {
+    grid-area: a18;
+}
+
+#btn18 {
+    grid-area: a15;
+}
