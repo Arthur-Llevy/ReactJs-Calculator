@@ -1,5 +1,7 @@
 # How to use ReactJs-Calculator
 
+## To view the project, click on this [link](https://reactjs-calculator-psi.vercel.app/)
+
 ## To use the project locally, follow these steps:
 
 1. With the terminal open, clone the repository with the following command: `git clone git@github.com:Arthur-Llevy/ReactJs-Calculator.git`
