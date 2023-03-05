@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: 'Inconsolata', monospace;
 }
 
 .container {
@@ -37,6 +37,7 @@ h1 {
     'a14 a14 a14 a15'
     'a16 a17 a17 a18';
     padding: 10px;
+    gap: 10px;
 }
 
 #result {
@@ -146,21 +147,22 @@ h1 {
 
 @media screen and (max-width: 390px) {
     .calculator-container {
-      height: 65%;
-      width: 90%;
-      background-color: #ddd;
-      border-radius: 10px;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      'input input input a1 ' 
-      'a2  a3  a4  a5 ' 
-      'a6  a7  a8  a9 ' 
-      'a10   a11   a12   a13' 
-      'a14   a14   a14   a15' 
-      'a16   a17   a17   a18';
-      padding: 1vw;
-    }
+        height: auto;
+        width: 90%;
+        background-color: #ddd;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'input input input a1 ' 
+        'a2  a3  a4  a5 ' 
+        'a6  a7  a8  a9 ' 
+        'a10   a11   a12   a13' 
+        'a14   a14   a14   a15' 
+        'a16   a17   a17   a18';
+        padding: 1vw;
+        gap: 5px;
+      }
 
     #result {
       outline: none;
@@ -170,7 +172,7 @@ h1 {
       grid-area: input;
       margin: auto;
       width: 94%;
-      font-size: 5vw;
+      font-size: 8vw;
       text-align: end;
       padding-right: 4px;
     }
