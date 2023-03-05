@@ -23,7 +23,7 @@ h1 {
 }
 
 .calculator-container {
-    height: 540px;
+    height: auto;
     width: 370px;
     background-color: #ddd;
     border-radius: 10px;
