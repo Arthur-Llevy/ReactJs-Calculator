@@ -6,7 +6,13 @@ export function Calculator(){
     //Function to add value to the input
     function insert(value){
         let result = document.getElementById('result');
-        result.value += value;
+
+        if (result.value === 'Nothing to calculate'){
+            result.value = value
+        }else {
+            result.value += value
+        }
+      
     }
 
     //Function to reset value from input

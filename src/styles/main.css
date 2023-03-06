@@ -48,7 +48,7 @@ h1 {
     grid-area: input;
     margin: auto;
     width: 94%;
-    font-size: 26px;
+    font-size: 22px;
     text-align: end;
     padding-right: 4px;
 }
@@ -172,7 +172,7 @@ h1 {
       grid-area: input;
       margin: auto;
       width: 94%;
-      font-size: 8vw;
+      font-size: 100%;
       text-align: end;
       padding-right: 4px;
     }
