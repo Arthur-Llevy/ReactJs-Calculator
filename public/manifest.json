@@ -5,16 +5,16 @@
     {
       "src": "../src/logo.svg",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/svg"
+      "type": "image/png"
     },
     {
       "src": "../src/logo.svg",
-      "type": "image/svg",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "../src/logo.svg",
-      "type": "image/svg",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
