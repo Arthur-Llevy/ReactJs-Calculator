@@ -1,42 +1,40 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../styles/main.css'
 
 export function Calculator(){
 
     //Function to add value to the input
-    function insert(value){
-        let result = document.getElementById('result');
 
-        if (result.value === 'Nothing to calculate'){
-            result.value = value
+    let result = useRef(null)
+
+    function insert(value){
+
+        if (result.current.value === 'Nothing to calculate'){
+            result.current.value = value
         }else {
-            result.value += value
+            result.current.value += value
         }
       
     }
 
     //Function to reset value from input
     function resetValue(){
-        let result = document.getElementById('result');
-        result.value = '';
+        result.current.value = '';
     }
 
     //Function to remove the last character from input
     function back(){
-        let result = document.getElementById('result');
-        result.value = result.value.slice(0, -1)
+        result.current.value = result.current.value.slice(0, -1)
     }
 
     //Function to calculate the result if the input value is not empty
     function calculate(){
 
-        let result = document.getElementById('result');
-
-        if (result.value !== ''){
-            result.value = eval(result.value);
+        if (result.current.value !== ''){
+            result.current.value = eval(result.current.value);
 
         }else{
-            result.value = "Nothing to calculate";
+            result.current.value = "Nothing to calculate";
         }
     }
 
@@ -48,7 +46,7 @@ export function Calculator(){
 
             <div className='calculator-container'>                
 
-                <input disabled className='result' id="result"/>
+                <input ref={result} disabled className='result' id="result"/>
                 <button onClick={resetValue} className='btn' id="btn1">C</button>
                 <button onClick={()=> insert('7')} className='btn' id="btn2">7</button>
                 <button onClick={()=> insert('8')} className='btn' id="btn3">8</button>
